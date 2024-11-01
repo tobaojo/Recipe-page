@@ -1,0 +1,56 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: hsl(30, 54%, 90%);
+}
+
+.container {
+  position: relative;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem;
+}
+
+.card {
+  background-color: hsl(0, 0%, 100%);
+  height: auto;
+  width: 100%;
+  max-width: 730px;
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  border-radius: 20px;
+}
+.card img {
+  border-radius: 20px;
+  max-width: 650px;
+  width: 100%;
+  align-self: center;
+  margin: 10px auto;
+}
+.card .text-content h1 {
+  font-family: "Young Serif", serif;
+  color: hsl(24, 5%, 18%);
+  letter-spacing: 2px;
+}
+.card .text-content p {
+  font-family: "Inter", serif;
+  color: hsl(30, 10%, 34%);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,74 @@
+$white: hsl(0, 0%, 100%);
+
+$stone100: hsl(30, 54%, 90%);
+$stone150: hsl(30, 18%, 87%);
+$stone600: hsl(30, 10%, 34%);
+$stone900: hsl(24, 5%, 18%);
+
+$brown800: hsl(14, 45%, 36%);
+
+$rose800: hsl(332, 51%, 32%);
+$rose50: hsl(330, 100%, 98%);
+
+$youngSerif: "Young Serif", serif;
+$outfit: "Outfit", serif;
+$inter: "Inter", serif;
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: $stone100;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem;
+}
+
+.card {
+  background-color: $white;
+  height: auto;
+  width: 100%;
+  max-width: 730px;
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  border-radius: 20px;
+  img {
+    border-radius: 20px;
+    max-width: 650px;
+    width: 100%;
+    align-self: center;
+    margin: 10px auto;
+  }
+  .text-content {
+    h1 {
+      font-family: $youngSerif;
+      color: $stone900;
+      letter-spacing: 2px;
+    }
+    p {
+      font-family: $inter;
+      color: $stone600;
+    }
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
