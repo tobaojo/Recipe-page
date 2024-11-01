@@ -13,37 +13,55 @@ body {
 .container {
   position: relative;
   display: flex;
-  height: 100vh;
   justify-content: center;
-  align-items: center;
-  margin: 3rem;
+  min-height: 100vh;
+  padding: 5rem;
 }
 
 .card {
   background-color: hsl(0, 0%, 100%);
-  height: auto;
   width: 100%;
-  max-width: 730px;
+  height: auto;
+  max-width: 45rem;
   display: flex;
   flex-direction: column;
-  padding: 24px;
-  border-radius: 20px;
+  border-radius: 2rem;
+  padding: 2rem;
+  gap: 1.5rem;
 }
 .card img {
-  border-radius: 20px;
-  max-width: 650px;
+  border-radius: 1rem;
   width: 100%;
   align-self: center;
-  margin: 10px auto;
+  height: auto;
+}
+.card .text-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }
 .card .text-content h1 {
   font-family: "Young Serif", serif;
   color: hsl(24, 5%, 18%);
-  letter-spacing: 2px;
+  letter-spacing: 0px;
 }
 .card .text-content p {
-  font-family: "Inter", serif;
+  font-family: "Outfit", serif;
   color: hsl(30, 10%, 34%);
+  font-size: 1rem;
+  letter-spacing: 0;
+  font-weight: 400;
+  line-height: 1.5;
+}
+.card .text-content .prep-time {
+  font-family: "Outfit", serif;
+  background-color: hsl(330, 100%, 98%);
+  padding: 0.5rem;
+}
+.card .text-content .prep-time h3 {
+  font-size: 24px;
+  font-weight: 600;
+  color: hsl(332, 51%, 32%);
 }
 
 .attribution {
@@ -53,4 +71,21 @@ body {
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 500px) {
+  .container {
+    padding: 0;
+  }
+  .container .card {
+    padding: 0;
+    border-radius: 0;
+  }
+  .container .card img {
+    padding: 0;
+    border-radius: 0px;
+  }
+  .container .card .text-content {
+    padding: 0rem 2rem;
+  }
 }/*# sourceMappingURL=style.css.map */
