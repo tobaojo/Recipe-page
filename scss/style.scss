@@ -68,14 +68,19 @@ body {
       font-weight: 400;
       line-height: 1.5;
     }
+    .list-item-head {
+      font-weight: 600;
+    }
     .prep-time {
       font-family: $outfit;
       background-color: $rose50;
       padding: 0.5rem;
+      border-radius: 1rem;
       h3 {
-        font-size: 20px;
+        font-size: 1.2rem;
         font-weight: 600;
         padding: 1rem;
+        padding-bottom: 0.2rem;
         color: $rose800;
       }
       .prep-time-list-items {
@@ -83,12 +88,68 @@ body {
         display: flex;
         flex-direction: column;
         margin-left: 1.2rem;
+        color: $stone600;
       }
       .prep-time-list-item {
         padding: 0.5rem;
       }
       ul li::marker {
         color: $rose800;
+      }
+    }
+    .sub-heading {
+      font-family: $youngSerif;
+      font-size: 1.5rem;
+      color: $brown800;
+      padding: 0.5rem 0rem;
+    }
+    .ingredients {
+      ul {
+        margin-left: 1.2rem;
+      }
+      ul li::marker {
+        color: $brown800;
+      }
+      .ingredient-list-item {
+        font-family: $outfit;
+        color: $stone600;
+        padding-left: 0.938rem;
+        margin: 0.4rem;
+      }
+    }
+    .instructions {
+      font-family: $outfit;
+      ol {
+        margin-left: 1.2rem;
+      }
+      ol li::marker {
+        color: $brown800;
+      }
+      .instructions-list-item {
+        color: $stone600;
+        padding-left: 0.938rem;
+        margin: 0.4rem;
+        font-size: 1rem;
+        line-height: 1.5;
+      }
+    }
+    .nutrition {
+      font-family: $outfit;
+      color: $stone600;
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 1.5rem;
+        td {
+          padding: 0.5rem 2rem;
+        }
+        tr:not(:first-child) {
+          border-top: 1px solid $stone150;
+        }
+        .measurement {
+          color: $brown800;
+          font-weight: 700;
+        }
       }
     }
   }
