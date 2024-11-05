@@ -73,8 +73,21 @@ body {
       background-color: $rose50;
       padding: 0.5rem;
       h3 {
-        font-size: 24px;
+        font-size: 20px;
         font-weight: 600;
+        padding: 1rem;
+        color: $rose800;
+      }
+      .prep-time-list-items {
+        padding: 0.4rem 1rem;
+        display: flex;
+        flex-direction: column;
+        margin-left: 1.2rem;
+      }
+      .prep-time-list-item {
+        padding: 0.5rem;
+      }
+      ul li::marker {
         color: $rose800;
       }
     }

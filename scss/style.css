@@ -59,8 +59,21 @@ body {
   padding: 0.5rem;
 }
 .card .text-content .prep-time h3 {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 600;
+  padding: 1rem;
+  color: hsl(332, 51%, 32%);
+}
+.card .text-content .prep-time .prep-time-list-items {
+  padding: 0.4rem 1rem;
+  display: flex;
+  flex-direction: column;
+  margin-left: 1.2rem;
+}
+.card .text-content .prep-time .prep-time-list-item {
+  padding: 0.5rem;
+}
+.card .text-content .prep-time ul li::marker {
   color: hsl(332, 51%, 32%);
 }
 
